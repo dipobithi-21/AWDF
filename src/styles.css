@@ -394,3 +394,82 @@ font-size:2.2rem;
 }
 
 }
+
+
+.spinner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    color: white;
+}
+
+.spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top: 6px solid white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.error-box {
+    max-width: 600px;
+    margin: 80px auto;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+}
+
+.error-box h2 {
+    color: #E9F5DB;
+    margin-bottom: 15px;
+}
+
+.error-box p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.error-box button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background: #87986A;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.error-box button:hover {
+    background: #718355;
+}
+
+
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background: #87986A;
+    padding: 10px 18px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background: #718355;
+}
