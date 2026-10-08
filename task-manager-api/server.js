@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require("cors");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 
@@ -7,6 +8,7 @@ dotenv.config();
 const Task = require("./models/Task");
 
 const app = express();
+app.use(cors());
 const PORT = 5000;
 
 // ===============================
